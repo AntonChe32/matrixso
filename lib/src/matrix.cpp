@@ -133,11 +133,12 @@ namespace math
     {
         int n(0);
         int m(0);
-
+        std::cout << "Enter columns count? ";
         in >> n;
+        std::cout << "Enter rows count? ";
         in >> m;
 
-        matrix = Matrix(n, m);
+        matrix = Matrix(m, n);
 
         return in;
     }

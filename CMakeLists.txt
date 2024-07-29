@@ -6,6 +6,8 @@ project(
     LANGUAGES CXX
 )
 add_subdirectory(
-    exe
     lib
+)
+add_subdirectory(
+    exe
 )

@@ -39,7 +39,7 @@ target_sources(matrixlibst PRIVATE ${sources})
 
 target_include_directories(matrixlibst
     PUBLIC
-        "<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>"
+        "$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>"
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>"
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>"
 )
@@ -56,7 +56,7 @@ target_sources(matrixlibso PRIVATE ${sources})
 
 target_include_directories(matrixlibso
     PUBLIC
-        "<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>"
+        "$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>"
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>"
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>"
 )

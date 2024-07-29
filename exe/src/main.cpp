@@ -56,7 +56,7 @@ int main()
     std::cout << "M3 = T(M1)" << std::endl;
     math_matrix_print(m3);
     VMatrix *m4 = math_matrix_dot(m1, m3);
-    std::cout << "M4 = DOT(M1,M3)" << std::endl;
+    std::cout << "M4 = M1*M3" << std::endl;
     math_matrix_print(m4);
  
     // M1 += M2;
